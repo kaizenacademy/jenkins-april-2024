@@ -12,6 +12,7 @@ spec:
     image: kaizenacademy/bin:1.0.0
     '''
 
+
 podTemplate(cloud: 'kubernetes', label: 'kubernetes', yaml: template) {
     node ("kubernetes") {
         container("kubernetes") {
